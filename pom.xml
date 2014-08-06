@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>edu.stevens.cs.ssp</groupId>
+  <artifactId>ssp</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.3.2</version>
+        <configuration>
+          <source>1.6</source>
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+   <dependencies>
+         <dependency>
+    <groupId>edu.stevens.cpe.nih.confidence</groupId>
+  <artifactId>confidence-bootstrap</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+                <dependency>
+                        <groupId>org.biojava</groupId>
+                        <artifactId>biojava3-core</artifactId>
+                        <version>3.0.5</version>
+                </dependency>
+                  <dependency>
+                        <groupId>org.biojava</groupId>
+                        <artifactId>biojava3-structure</artifactId>
+                        <version>3.0.5</version>
+                </dependency>
+                <!-- other biojava jars as needed -->
+        </dependencies>
+	<repositories>
+		<repository>
+			<id>biojava-maven-repo</id>
+			<name>BioJava repository</name>
+			<url>http://www.biojava.org/download/maven/</url>			
+		</repository>
+	</repositories>
+</project>
